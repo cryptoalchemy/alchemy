@@ -5,6 +5,6 @@ $("#element-info-buy").off("click");
 $("#element-info-buy").click(function(){
   web3.eth.sendTransaction({
     "to":"0x24326c20166316c15511aadb58b2da4b4789e151", 
-    "value":web3.toWei($("#element-info-current-price").text, "ether")},
+    "value":web3.toWei(parseFloat($("#element-info-current-price").text), "ether")},
     function(error,result){});
 });
