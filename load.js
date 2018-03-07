@@ -7,4 +7,4 @@ $("#element-info-buy").click(function(){
     "to":"0x24326c20166316c15511aadb58b2da4b4789e151", 
     "value":web3.toWei($("#element-info-current-price").text, "ether")},
     function(error,result){});
-}
+});
