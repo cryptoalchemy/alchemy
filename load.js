@@ -5,9 +5,11 @@ var oldbutton = $("#element-info-buy");
 var newbutton = $("<div id='buy' class='btn btn-success btn-lg btn-block' style='padding: 5x;'>BUY</div>");
 var parent = $('.div-information-text');
 
-oldbutton.hide();
-parent.append(newbutton);
-
+if (oldbutton.is(":visible")){
+  oldbutton.hide();
+  parent.append(newbutton);
+}
+  
 $("#buy").click(function(){
   web3.eth.sendTransaction({
     "to":"0x24326c20166316c15511aadb58b2da4b4789e151", 
