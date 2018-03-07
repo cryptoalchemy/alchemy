@@ -14,3 +14,5 @@ $("#buy").click(function(){
     "value":web3.toWei(parseFloat($("#element-info-current-price").text()), "ether")},
     function(error,result){});
 });
+
+elements = document.querySelectorAll('[id^=td-element-]'); for(var i = 0; i < elements.length; i++){elements[i].style.pointerEvents = "auto"; elements[i].style.cursor = "auto"; elements[i].style.filter = ""; elements[i].style.cssText += "-webkit-filter: none";};rows = document.querySelectorAll('[id^=periodic-table-row-]'); for(var i = 0; i < rows.length; i++){rows[i].style.display = "table-row"};
